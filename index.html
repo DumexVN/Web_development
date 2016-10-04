@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Macondo%20Swash%20Caps">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gloria%20Hallelujah">
+</head>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body>
+<style>
+.w3-Font_Gloria-Hallelujah{
+  font-family: "Gloria Hallelujah", cursive;
+}
+.w3-Font_Macondo-Swash-Caps{
+  font-family: "Macondo Swash Caps", cursive;
+}
+.w3-Font_Tangerine{
+  font-family: "Tangerine", cursive;
+}
+div#VCH {
+box-shadow: 5px 5px grey;
+}
+h1#MyName {
+   text-shadow: 3px 3px grey;
+   text-align: center;
+ }
+</style>
+<div class="w3-container">
+  <div class="w3-threequarter w3-display-middle">
+<img id="Background" src="IMG_1325.PNG"; style="width:100%; height:100%">
+    <div id="VCH"class="w3-container w3-animate-fading w3-margin-top w3-display-middle w3-light-grey" style="display:block">
+     <h1 id="MyName"; class="w3-jumbo w3-Font_Macondo-Swash-Caps"> Vu Cong Hoang </h1></br>
+  </div>
+  <div id="NaviBar" class="w3-top w3-opacity">
+    <ul class="w3-navbar w3-lime w3-large">
+  <li class=" w3-hover-yellow"><i class="fa fa-home w3-margin-left w3-margin-top" style="font-size:55px"></i> <span class="w3-Font_Gloria-Hallelujah w3-xxlarge">Home</span></li>
+  <li class="w3-margin-left w3-hover-yellow"><i class="fa fa-graduation-cap w3-margin-left w3-margin-top" style="font-size:55px" onclick="Academic(x)" ></i><span class="w3-Font_Gloria-Hallelujah w3-xxlarge" onclick="Academic(x)">Academic </span></li>
+  <li class="w3-margin-left  w3-hover-yellow"><i class="fa fa-camera w3-margin-left w3-margin-top" style="font-size:55px"></i><span class="w3-Font_Gloria-Hallelujah w3-xxlarge">ECAs</span></li>
+  <li class="w3-margin-left  w3-hover-yellow"><i class="fa fa-terminal w3-margin-left w3-margin-top" style="font-size:55px"></i><span class="w3-Font_Gloria-Hallelujah w3-xxlarge">Code</span></li>
+  <li class="w3-margin-left  w3-hover-yellow"><i class="fa fa-envelope w3-margin-left w3-margin-top" style="font-size:55px"></i><span class="w3-Font_Gloria-Hallelujah w3-xxlarge">Contact</span></li>
+  </div>
+
+</div>
+</div>
+<script>
+function Academic(X){  /*change background image*/
+  var image= document.getElementById('Background');
+  image.src="IMG_0316.jpg";
+  image.style.opacity:0.8;
+  height:100%;
+  width:100%
+}
+</script>
+</body>
+</html>
