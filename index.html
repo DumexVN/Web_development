@@ -14,6 +14,7 @@
 </head>
 <body>
 <style>
+.sections {display:none}
 .w3-Font_Gloria-Hallelujah{
   font-family: "Gloria Hallelujah", cursive;
 }
@@ -23,38 +24,64 @@
 .w3-Font_Tangerine{
   font-family: "Tangerine", cursive;
 }
-div#VCH {
-box-shadow: 5px 5px grey;
-}
+
 h1#MyName {
    text-shadow: 3px 3px grey;
    text-align: center;
+   box-shadow: 5px 5px 5px;
  }
+ .Slideshow {display:none}
 </style>
-<div class="w3-container">
-  <div class="w3-threequarter w3-display-middle">
-<img id="Background" src="IMG_1325.PNG"; style="width:100%; height:100%">
-    <div id="VCH"class="w3-container w3-animate-fading w3-margin-top w3-display-middle w3-light-grey" style="display:block">
-     <h1 id="MyName"; class="w3-jumbo w3-Font_Macondo-Swash-Caps"> Vu Cong Hoang </h1></br>
+<div>
+  <ul class="w3-navbar w3-lime w3-large w3-top w3-animate-opacity" style="width:100%, opacity:0.9, height:20%">
+<li ><a href="#"class=" w3-hover-khaki tablink" onclick="openSection(event,'Home')"><i class="fa fa-home w3-margin-top" style="font-size:40px"><span class="w3-Font_Gloria-Hallelujah" style="font-size:30px" >Home</i></span></a></li>
+<li ><a href="#" class=" w3-hover-khaki tablink" onclick="openSection(event,'Academic')"><i class="fa fa-graduation-cap w3-margin-top" style="font-size:40px" ><span class="w3-Font_Gloria-Hallelujah" style="font-size:30px">Academic</i></span></a></li>
+<li><a href="#" class=" w3-hover-khaki tablink" onclick="openSection(event,'ECAs')"><i class="fa fa-camera w3-margin-top" style="font-size:40px"><span class="w3-Font_Gloria-Hallelujah" style="font-size:30px">ECAs</i></span></a></li>
+<li><a href="#" class=" w3-hover-khaki tablink" onclick="openSection(event,'Code')"><i class="fa fa-terminal w3-margin-top" style="font-size:40px"><span class="w3-Font_Gloria-Hallelujah" style="font-size:30px">Code</i></span></a></li>
+<li ><a href="#" class=" w3-hover-khaki tablink" onclick="openSection(event,'Contact')"><i class="fa fa-envelope w3-margin-top" style="font-size:40px"><span class="w3-Font_Gloria-Hallelujah" style="font-size:30px">Contact</i></span></a></li>
+<li ><a href="#" class=" w3-hover-khaki tablink" onclick="openSection(event,'Gallery')"><i class="fa fa-image w3-margin-top" style="font-size:40px"><span class="w3-Font_Gloria-Hallelujah" style="font-size:30px">Gallery</i></span></a></li>
+</ul>
+    <div id="Home" class="w3-container w3-display-top sections">
+      <img class="w3-round w3-animate-opacity w3-display-middle" src="IMG_1325.PNG"; style="width:100%">
+     <h1 id="MyName" class="w3-jumbo w3-display-middle w3-Font_Macondo-Swash-Caps w3-light-grey w3-opacity w3-animate-opacity"> Vu Cong Hoang </h1></br>
   </div>
-  <div id="NaviBar" class="w3-top w3-opacity">
-    <ul class="w3-navbar w3-lime w3-large">
-  <li class=" w3-hover-yellow"><i class="fa fa-home w3-margin-left w3-margin-top" style="font-size:55px"></i> <span class="w3-Font_Gloria-Hallelujah w3-xxlarge">Home</span></li>
-  <li class="w3-margin-left w3-hover-yellow"><i class="fa fa-graduation-cap w3-margin-left w3-margin-top" style="font-size:55px" onclick="Academic(x)" ></i><span class="w3-Font_Gloria-Hallelujah w3-xxlarge" onclick="Academic(x)">Academic </span></li>
-  <li class="w3-margin-left  w3-hover-yellow"><i class="fa fa-camera w3-margin-left w3-margin-top" style="font-size:55px"></i><span class="w3-Font_Gloria-Hallelujah w3-xxlarge">ECAs</span></li>
-  <li class="w3-margin-left  w3-hover-yellow"><i class="fa fa-terminal w3-margin-left w3-margin-top" style="font-size:55px"></i><span class="w3-Font_Gloria-Hallelujah w3-xxlarge">Code</span></li>
-  <li class="w3-margin-left  w3-hover-yellow"><i class="fa fa-envelope w3-margin-left w3-margin-top" style="font-size:55px"></i><span class="w3-Font_Gloria-Hallelujah w3-xxlarge">Contact</span></li>
-  </div>
-
+  <div id="Academic" class="w3-container w3-light-grey sections" style="margin-top:70px ;width:100% ;height:600px">
+ <h1 class="w3-container">
+asdfasdffkkljlkakldsf
+ </h1>
 </div>
 </div>
 <script>
-function Academic(X){  /*change background image*/
-  var image= document.getElementById('Background');
-  image.src="IMG_0316.jpg";
-  image.style.opacity:0.8;
-  height:100%;
-  width:100%
+openSection("Home")
+function openSection(evt, sectionName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("sections");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-bottombar w3-border-teal", "");
+  }
+  document.getElementById(sectionName).style.display = "block";
+  evt.currentTarget.className += " w3-bottombar w3-border-teal";
+}
+
+</script>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("Slideshow");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000); // Change image every 3 seconds
 }
 </script>
 </body>
