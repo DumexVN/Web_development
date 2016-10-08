@@ -15,6 +15,7 @@
 <body>
 <style>
 .sections {display:none}
+.sectiona {display:none}
 .w3-Font_Gloria-Hallelujah{
   font-family: "Gloria Hallelujah", cursive;
 }
@@ -30,60 +31,167 @@ h1#MyName {
    text-align: center;
    box-shadow: 5px 5px 5px;
  }
- .Slideshow {display:none}
+.myPhotoSlides {display:none}
+.centre{text-align:center}
+img#BackgroundImage{
+  z-index:-1;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:100%;
+  height:100%;
+}
+a#arrow:hover{
+  color:grey;
+}
+.divshadow{
+  box-shadow:1px 1px 1px;
+}
 </style>
-<div>
-  <ul class="w3-navbar w3-lime w3-large w3-top w3-animate-opacity" style="width:100%, opacity:0.9, height:20%">
-<li ><a href="#"class=" w3-hover-khaki tablink" onclick="openSection(event,'Home')"><i class="fa fa-home w3-margin-top" style="font-size:40px"><span class="w3-Font_Gloria-Hallelujah" style="font-size:30px" >Home</i></span></a></li>
-<li ><a href="#" class=" w3-hover-khaki tablink" onclick="openSection(event,'Academic')"><i class="fa fa-graduation-cap w3-margin-top" style="font-size:40px" ><span class="w3-Font_Gloria-Hallelujah" style="font-size:30px">Academic</i></span></a></li>
-<li><a href="#" class=" w3-hover-khaki tablink" onclick="openSection(event,'ECAs')"><i class="fa fa-camera w3-margin-top" style="font-size:40px"><span class="w3-Font_Gloria-Hallelujah" style="font-size:30px">ECAs</i></span></a></li>
-<li><a href="#" class=" w3-hover-khaki tablink" onclick="openSection(event,'Code')"><i class="fa fa-terminal w3-margin-top" style="font-size:40px"><span class="w3-Font_Gloria-Hallelujah" style="font-size:30px">Code</i></span></a></li>
-<li ><a href="#" class=" w3-hover-khaki tablink" onclick="openSection(event,'Contact')"><i class="fa fa-envelope w3-margin-top" style="font-size:40px"><span class="w3-Font_Gloria-Hallelujah" style="font-size:30px">Contact</i></span></a></li>
-<li ><a href="#" class=" w3-hover-khaki tablink" onclick="openSection(event,'Gallery')"><i class="fa fa-image w3-margin-top" style="font-size:40px"><span class="w3-Font_Gloria-Hallelujah" style="font-size:30px">Gallery</i></span></a></li>
+<script>
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+</script>
+<div class="w3-hide-medium w3-hide-large" style="width:100%">
+  <div onclick="w3_open()" class="w3-container w3-top w3-lime w3-Font_Gloria-Hallelujah" style="font-size=30px width:100%">
+  <i class="fa fa-bars"></i>Navigation Bar</div>
+  <nav class="w3-sidenav w3-card-2 w3-white" id="mySidenav">
+  <div class="w3-container w3-lime">
+    <span onclick="w3_close()" class="w3-closenav w3-right w3-large">X</span>
+    <br>
+    <div class="w3-padding w3-center">
+      <img class="w3-circle" src="4.PNG" style="width:80%">
+    </div>
+  <br>
+<a href="#" class="ttablink" onclick="openSections(event,'Home')">Home</a>
+<a href="#" class="ttablink" onclick="openSections(event,'Academic')">Academic
+<a href="#" class="ttablink"  onclick="openSections(event,'ECAs')" >ECAs</a>
+<a href="#" class="ttablink"  onclick="openSections(event,'Code')" >Code</a>
+<a href="#" class="ttablink"  onclick="openSections(event,'Contact')" >Contact</a>
+<a href="#" class="ttablink"  onclick="openSections(event,'Gallery')" >Gallery</a>
+
+</nav>
+
+</div>
+
+<script>
+function openSections(evts, sectionNames) {
+  var a, y, tablinkss;
+  y = document.getElementsByClassName("sectiona");
+  for (a = 0; a < y.length; a++) {
+      y[a].style.display = "none";
+  }
+  tablinkss = document.getElementsByClassName("ttablink");
+  for (a = 0; a < y.length; a++) {
+      tablinkss[a].className = tablinkss[a].className.replace(" w3-bottombar w3-border-teal", "");
+  }
+  document.getElementById(sectionNames).style.display = "block";
+  evts.currentTarget.className += " w3-bottombar w3-border-teal";
+}
+</script>
+
+<div class="w3-hide-small"style="width:100%">
+  <ul class="w3-navbar w3-lime w3-large w3-top w3-animate-opacity" style="width:100%, opacity:0.9">
+<li><a href="#"class=" w3-hover-khaki tablink" onclick="openSection(event,'Home')"><i class="fa fa-home w3-margin-top w3-hide-small" style="font-size:40px"><span class="w3-Font_Gloria-Hallelujah" style="font-size:30px" >Home</i></span></a></li>
+<li><a href="#" class=" w3-hover-khaki tablink" onclick="openSection(event,'Academic')"><i class="fa fa-graduation-cap w3-margin-top w3-hide-small" style="font-size:40px" ><span class="w3-Font_Gloria-Hallelujah" style="font-size:30px">Academic</i></span></a></li>
+<li><a href="#" class=" w3-hover-khaki tablink" onclick="openSection(event,'ECAs')"><i class="fa fa-camera w3-margin-top w3-hide-small" style="font-size:40px"><span class="w3-Font_Gloria-Hallelujah" style="font-size:30px">ECAs</i></span></a></li>
+<li><a href="#" class=" w3-hover-khaki tablink" onclick="openSection(event,'Code')"><i class="fa fa-terminal w3-margin-top w3-hide-small" style="font-size:40px"><span class="w3-Font_Gloria-Hallelujah" style="font-size:30px">Code</i></span></a></li>
+<li><a href="#" class=" w3-hover-khaki tablink" onclick="openSection(event,'Contact')"><i class="fa fa-envelope w3-margin-top w3-hide-small" style="font-size:40px"><span class="w3-Font_Gloria-Hallelujah" style="font-size:30px">Contact</i></span></a></li>
+<li><a href="#" class=" w3-hover-khaki tablink" onclick="openSection(event,'Gallery')"><i class="fa fa-image w3-margin-top w3-hide-small" style="font-size:40px"><span class="w3-Font_Gloria-Hallelujah" style="font-size:30px">Gallery</i></span></a></li>
 </ul>
-    <div id="Home" class="w3-container w3-display-top sections">
-      <img class="w3-round w3-animate-opacity w3-display-middle" src="IMG_1325.PNG"; style="width:100%">
+    <div id="Home" class="w3-container w3-display-top sectiona sections">
+      <img class="w3-round w3-animate-opacity w3-display-middle" src="4.PNG"; style="width:80%">
      <h1 id="MyName" class="w3-jumbo w3-display-middle w3-Font_Macondo-Swash-Caps w3-light-grey w3-opacity w3-animate-opacity"> Vu Cong Hoang </h1></br>
   </div>
 
-  <div id="Academic" class="w3-row w3-light-grey sections" style="margin-top:70px ;width:100% ;height:600px">
-<div class="w3-third w3-margin-top w3-rightbar w3-border-grey">
+  <div id="Academic" class="w3-row w3-light-grey sectiona sections" style="margin-top:70px ;width:100% ;height:550px">
+<div class="w3-third w3-margin-top w3-rightbar w3-border-grey" style="margin-left:5%">
 <h1 class="w3-Font_Macondo-Swash-Caps w3-margin-left" style="font-size:40px">Academic Performance</h1>
+<p>aa</p>
 </div>
 </div>
 
-  <div id="ECAs" class="w3-row w3-light-grey sections" style="margin-top:70px ;width:100% ;height:600px">
+  <div id="ECAs" class="w3-row w3-light-grey sectiona sections" style="margin-top:70px ;width:100% ;height:600px">
 <div class="w3-third w3-margin-top w3-rightbar w3-border-grey">
 <h1 class="w3-Font_Macondo-Swash-Caps w3-margin-left" style="font-size:40px">Non-academic Achievements</h1>
 </div>
 </div>
 
-   <div id="Code" class="w3-row w3-light-grey sections" style="margin-top:70px ;width:100% ;height:600px">
+   <div id="Code" class="w3-row w3-light-grey sectiona sections" style="margin-top:70px ;width:100% ;height:550px">
 <div class="w3-third w3-margin-top w3-rightbar w3-border-grey">
 <h1 class="w3-Font_Macondo-Swash-Caps w3-margin-left" style="font-size:40px">Computer Language</h1>
 </div>
 </div>
 
-  <div id="Contact" class="w3-row w3-light-grey sections" style="margin-top:70px ;width:100% ;height:550px">
-<div class="w3-third w3-margin-top w3-rightbar w3-border-grey" style="margin-left:20px">
-<h1 class="w3-Font_Macondo-Swash-Caps w3-margin-left" style="font-size:40px">Get In Touch</h1> </br>
-adsfkjnj
+  <div id="Contact" class="w3-row w3-light-grey sectiona sections" style="margin-top:70px ;height:590px">
+<div class="w3-third w3-rightbar w3-border-grey" style="margin-left:20px height:100%">
+<h1 class="w3-Font_Macondo-Swash-Caps w3-xxxlarge w3-margin-left" style="height:100%">Get In Touch</h1>
+<div id="map" style="width:95%;height:250px"></div><br>
+<div class="divshadow 3-light-grey w3-margin-left fa fa-envelope" style="font-size:20px"><a class="w3-Font_Macondo-Swash-Caps w3-xlarge"> vuhoang1609@gmail.com </a></div>
 </div>
-<div class="w3-twothird w3-margin-top w3-leftbar w3-border-grey w3-red" style="margin-top:70px ; height:550">
+<div class="w3-rest w3-margin-left w3-margin-top"style="width:100% height:100%">
+<h1 class="w3-margin-left w3-xxxlarge w3-Font_Macondo-Swash-Caps"> Send me an email </h1>
+<div class="w3-margin-top" style="width:100%">
+<div class="w3-light-grey" style="width:100%">
+<textarea class="w3-margin-left w3-light-grey w3-round w3-border " style="width:70%" placeholder=" Your Name"></textarea>
+</div>
+</br>
+<div class="w3-light-grey" style="width:100%">
+<textarea class="w3-margin-left w3-light-grey w3-round w3-border" style="width:70%" placeholder=" Email"></textarea>
+</div>
+</br>
+<div class="w3-light-grey">
+<textarea rows="10"class="w3-margin-left w3-light-grey w3-round w3-border" style="width:80%"placeholder="Comments"></textarea>
+</div>
+<div>
 
 </div>
 </div>
-
-  <div id="Gallery" class="w3-row w3-light-grey sections" style="margin-top:70px ;width:100% ;height:600px">
-<div class="w3-third w3-margin-top w3-rightbar w3-border-grey">
-<h1 class="w3-Font_Macondo-Swash-Caps w3-margin-left" style="font-size:40px">Photo Gallery</h1>
 </div>
 </div>
-
+  <div id="Gallery" class="w3-container sectiona sections" style="margin-top:20%">
+  <img id="BackgroundImage" src="background.jpg" style="width:100% z-index:-1">
+    <div class="w3-display-middle" style="position:absolute; z-index:1000; width:70%">
+    <div class="w3-display-topleft" style="position:absolute; z-index:1000"> <a id="arrow" class="fa fa-chevron-circle-left fa-4x" onclick="plusDivs(-1)"></a></div>
+    <div class="w3-display-topright" style="position:absolute; z-index:1000"> <a id="arrow" class="fa fa-chevron-circle-right fa-4x" onclick="plusDivs(1)"></a> </div>
+  </div>
+<div class="myPhotoSlides w3-display-middle" style="margin-top:40px"><img class=" w3-animate-left" src="1.jpg" style="height:550px"><div class="w3-display-bottomleftw3-container w3-Font_Tangerine w3-xxlarge w3-light-grey">Operation Smile</div></div>
+<div class="myPhotoSlides w3-display-middle" style="margin-top:40px"><img class=" w3-animate-left" src="2.JPG" style="height:550px"><div class="w3-display-bottomleft w3-container w3-Font_Tangerine w3-xxlarge w3-light-grey">Dental Mission-Quang Ngai</div></div>
+<div class="myPhotoSlides w3-display-middle" style="margin-top:40px"><img class=" w3-animate-left" src="3.JPG" style="height:550px"><div class="w3-display-bottomleft w3-container w3-Font_Tangerine w3-xxlarge w3-light-grey">After a cleft palate operation...</div></div>
+<div class="myPhotoSlides w3-display-middle" style="margin-top:40px"><img class=" w3-animate-left" src="4.PNG" style="height:550px"><div class="w3-display-bottomleft w3-container w3-Font_Tangerine w3-xxlarge w3-light-grey">Piano Concert MYC 2016</div></div>
+<div class="myPhotoSlides w3-display-middle" style="margin-top:40px"><img class=" w3-animate-left" src="5.JPG" style="height:550px"><div class="w3-display-bottomleft w3-container w3-Font_Tangerine w3-xxlarge w3-light-grey">Asia Arts Festival Gold trophy</div></div>
+<div class="myPhotoSlides w3-display-middle" style="margin-top:40px"><img class=" w3-animate-left" src="6.JPG" style="height:550px"><div class="w3-display-bottomleft w3-container w3-Font_Tangerine w3-xxlarge w3-light-grey">Operation Smile</div></div>
+<div class="myPhotoSlides w3-display-middle" style="margin-top:40px"><img class=" w3-animate-left" src="7.JPG" style="height:550px"><div class="w3-display-bottomleft w3-container w3-Font_Tangerine w3-xxlarge w3-light-grey">Operation Smile</div></div>
+<div class="myPhotoSlides w3-display-middle" style="margin-top:40px"><img class=" w3-animate-left" src="8.JPG" style="height:550px"><div class="w3-display-bottomleft w3-container w3-Font_Tangerine w3-xxlarge w3-light-grey">Basketball match against SPAS</div></div>
+<div class="myPhotoSlides w3-display-middle" style="margin-top:40px"><img class=" w3-animate-left" src="9.JPG" style="height:550px"><div class="w3-display-bottomleft w3-container w3-Font_Tangerine w3-xxlarge w3-light-grey">Football match agaisnt HIS</div></div>
+<div class="myPhotoSlides w3-display-middle" style="margin-top:40px"><img class=" w3-animate-left" src="10.JPG" style="height:550px"><div class="w3-display-bottomleft w3-container w3-Font_Tangerine w3-xxlarge w3-light-grey">Half-time tactic session</div></div>
+<div class="myPhotoSlides w3-display-middle" style="margin-top:40px"><img class=" w3-animate-left" src="11.JPG" style="height:550px"><div class="w3-display-bottomleft w3-container w3-Font_Tangerine w3-xxlarge w3-light-grey">House football competition</div></div>
+<div class="myPhotoSlides w3-display-middle" style="margin-top:40px"><img class=" w3-animate-left" src="12.JPG" style="height:550px"><div class="w3-display-bottomleft w3-container w3-Font_Tangerine w3-xxlarge w3-light-grey">Volleyball match against UNIS</div></div>
+<div class="myPhotoSlides w3-display-middle" style="margin-top:40px"><img class=" w3-animate-left" src="13.JPG" style="height:550px"><div class="w3-display-bottomleft w3-container w3-Font_Tangerine w3-xxlarge w3-light-grey">Volleyball team 2015</div></div>
+<div class="myPhotoSlides w3-display-middle" style="margin-top:40px"><img class=" w3-animate-left" src="14.JPG" style="height:550px"><div class="w3-display-bottomleft w3-container w3-Font_Tangerine w3-xxlarge w3-light-grey">Team photo with Wellspring</div></div>
+<div class="myPhotoSlides w3-display-middle" style="margin-top:40px"><img class=" w3-animate-left" src="15.JPG" style="height:550px"><div class="w3-display-bottomleft w3-container w3-Font_Tangerine w3-xxlarge w3-light-grey">Operation Smile</div></div>
+<div class="myPhotoSlides w3-display-middle" style="margin-top:40px"><img class=" w3-animate-left" src="16.JPG" style="height:550px"><div class="w3-display-bottomleft w3-container w3-Font_Tangerine w3-xxlarge w3-light-grey">Duke Of Edinburgh dinner at campsite</div></div>
+<div class="myPhotoSlides w3-display-middle" style="margin-top:40px"><img class=" w3-animate-left" src="17.JPG" style="height:550px"><div class="w3-display-bottomleft w3-container w3-Font_Tangerine w3-xxlarge w3-light-grey">Translanguaging competition</div></div>
+<div class="myPhotoSlides w3-display-middle" style="margin-top:40px"><img class=" w3-animate-left" src="18.JPG" style="height:550px"><div class="w3-display-bottomleft w3-container w3-Font_Tangerine w3-xxlarge w3-light-grey">Translanguaging trophy</div></div>
+<div class="myPhotoSlides w3-display-middle" style="margin-top:40px"><img class=" w3-animate-left" src="19  .JPG" style="height:550px"><div class="w3-display-bottomleft w3-container w3-Font_Tangerine w3-xxlarge w3-light-grey">Hanoi High School Maths Challenge 3rd Place</div></div>
 </div>
 </div>
 <script>
-openSection("Home")
+function myMap (){
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(21.027340, 105.829410),
+    zoom: 10
+  }
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+<script>
 function openSection(evt, sectionName) {
   var i, x, tablinks;
   x = document.getElementsByClassName("sections");
@@ -97,23 +205,25 @@ function openSection(evt, sectionName) {
   document.getElementById(sectionName).style.display = "block";
   evt.currentTarget.className += " w3-bottombar w3-border-teal";
 }
-
 </script>
 <script>
-var myIndex = 0;
-carousel();
+var PhotoIndex = 1;
+showDivs(PhotoIndex);
 
-function carousel() {
+function plusDivs(n) {
+  showDivs(PhotoIndex += n);
+  }
+
+  function showDivs(n) {
     var i;
-    var x = document.getElementsByClassName("Slideshow");
+    var x = document.getElementsByClassName("myPhotoSlides");
+    if (n > x.length) {PhotoIndex = 1}
+    if (n < 1) {PhotoIndex = x.length}
     for (i = 0; i < x.length; i++) {
        x[i].style.display = "none";
     }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 3000); // Change image every 3 seconds
-}
+    x[PhotoIndex-1].style.display = "block";
+  }
 </script>
 </body>
 </html>
