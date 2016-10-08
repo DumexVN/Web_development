@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS</title>
+<title>Hoang Vu</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
@@ -56,52 +56,15 @@ function w3_close() {
     document.getElementById("mySidenav").style.display = "none";
 }
 </script>
-<div class="w3-hide-medium w3-hide-large" style="width:100%">
-  <div onclick="w3_open()" class="w3-container w3-top w3-lime w3-Font_Gloria-Hallelujah" style="font-size=30px width:100%">
-  <i class="fa fa-bars"></i>Navigation Bar</div>
-  <nav class="w3-sidenav w3-card-2 w3-white" id="mySidenav">
-  <div class="w3-container w3-lime">
-    <span onclick="w3_close()" class="w3-closenav w3-right w3-large">X</span>
-    <br>
-    <div class="w3-padding w3-center">
-      <img class="w3-circle" src="4.PNG" style="width:80%">
-    </div>
-  <br>
-<a href="#" class="ttablink" onclick="openSections(event,'Home')">Home</a>
-<a href="#" class="ttablink" onclick="openSections(event,'Academic')">Academic
-<a href="#" class="ttablink"  onclick="openSections(event,'ECAs')" >ECAs</a>
-<a href="#" class="ttablink"  onclick="openSections(event,'Code')" >Code</a>
-<a href="#" class="ttablink"  onclick="openSections(event,'Contact')" >Contact</a>
-<a href="#" class="ttablink"  onclick="openSections(event,'Gallery')" >Gallery</a>
 
-</nav>
-
-</div>
-
-<script>
-function openSections(evts, sectionNames) {
-  var a, y, tablinkss;
-  y = document.getElementsByClassName("sectiona");
-  for (a = 0; a < y.length; a++) {
-      y[a].style.display = "none";
-  }
-  tablinkss = document.getElementsByClassName("ttablink");
-  for (a = 0; a < y.length; a++) {
-      tablinkss[a].className = tablinkss[a].className.replace(" w3-bottombar w3-border-teal", "");
-  }
-  document.getElementById(sectionNames).style.display = "block";
-  evts.currentTarget.className += " w3-bottombar w3-border-teal";
-}
-</script>
-
-<div class="w3-hide-small"style="width:100%">
+<div style="width:100%">
   <ul class="w3-navbar w3-lime w3-large w3-top w3-animate-opacity" style="width:100%, opacity:0.9">
-<li><a href="#"class=" w3-hover-khaki tablink" onclick="openSection(event,'Home')"><i class="fa fa-home w3-margin-top w3-hide-small" style="font-size:40px"><span class="w3-Font_Gloria-Hallelujah" style="font-size:30px" >Home</i></span></a></li>
-<li><a href="#" class=" w3-hover-khaki tablink" onclick="openSection(event,'Academic')"><i class="fa fa-graduation-cap w3-margin-top w3-hide-small" style="font-size:40px" ><span class="w3-Font_Gloria-Hallelujah" style="font-size:30px">Academic</i></span></a></li>
-<li><a href="#" class=" w3-hover-khaki tablink" onclick="openSection(event,'ECAs')"><i class="fa fa-camera w3-margin-top w3-hide-small" style="font-size:40px"><span class="w3-Font_Gloria-Hallelujah" style="font-size:30px">ECAs</i></span></a></li>
-<li><a href="#" class=" w3-hover-khaki tablink" onclick="openSection(event,'Code')"><i class="fa fa-terminal w3-margin-top w3-hide-small" style="font-size:40px"><span class="w3-Font_Gloria-Hallelujah" style="font-size:30px">Code</i></span></a></li>
-<li><a href="#" class=" w3-hover-khaki tablink" onclick="openSection(event,'Contact')"><i class="fa fa-envelope w3-margin-top w3-hide-small" style="font-size:40px"><span class="w3-Font_Gloria-Hallelujah" style="font-size:30px">Contact</i></span></a></li>
-<li><a href="#" class=" w3-hover-khaki tablink" onclick="openSection(event,'Gallery')"><i class="fa fa-image w3-margin-top w3-hide-small" style="font-size:40px"><span class="w3-Font_Gloria-Hallelujah" style="font-size:30px">Gallery</i></span></a></li>
+<li><a href="#"class=" w3-hover-khaki tablink" onclick="openSection(event,'Home')"><i class="fa fa-home w3-margin-top" style="font-size:40px"></i><span class="w3-Font_Gloria-Hallelujah w3-hide-small" style="font-size:30px" >Home</span></a></li>
+<li><a href="#" class=" w3-hover-khaki tablink" onclick="openSection(event,'Academic')"><i class="fa fa-graduation-cap w3-margin-top" style="font-size:40px" ></i><span class="w3-Font_Gloria-Hallelujah w3-hide-small" style="font-size:30px">Academic</span></a></li>
+<li><a href="#" class=" w3-hover-khaki tablink" onclick="openSection(event,'ECAs')"><i class="fa fa-camera w3-margin-top" style="font-size:40px"></i><span class="w3-Font_Gloria-Hallelujah w3-hide-small" style="font-size:30px">ECAs</span></a></li>
+<li><a href="#" class=" w3-hover-khaki tablink" onclick="openSection(event,'Code')"><i class="fa fa-terminal w3-margin-top" style="font-size:40px"></i><span class="w3-Font_Gloria-Hallelujah w3-hide-small" style="font-size:30px">Code</span></a></li>
+<li><a href="#" class=" w3-hover-khaki tablink" onclick="openSection(event,'Contact')"><i class="fa fa-envelope w3-margin-top" style="font-size:40px"></i><span class="w3-Font_Gloria-Hallelujah w3-hide-small" style="font-size:30px">Contact</span></a></li>
+<li><a href="#" class=" w3-hover-khaki tablink" onclick="openSection(event,'Gallery')"><i class="fa fa-image w3-margin-top" style="font-size:40px"></i><span class="w3-Font_Gloria-Hallelujah w3-hide-small" style="font-size:30px">Gallery</span></a></li>
 </ul>
     <div id="Home" class="w3-container w3-display-top sectiona sections">
       <img class="w3-round w3-animate-opacity w3-display-middle" src="4.PNG"; style="width:80%">
