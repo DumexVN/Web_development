@@ -1,0 +1,42 @@
+.phone{
+  height:auto;
+  width:100%;
+}
+.phoneBackground{
+  height:400px;
+  width:100px;
+  z-index:-1;
+}
+.sections {display:none}
+.sectiona {display:none}
+.w3-Font_Gloria-Hallelujah{
+  font-family: "Gloria Hallelujah", cursive;
+}
+.w3-Font_Macondo-Swash-Caps{
+  font-family: "Macondo Swash Caps", cursive;
+}
+.w3-Font_Tangerine{
+  font-family: "Tangerine", cursive;
+}
+
+h1#MyName {
+   text-shadow: 3px 3px grey;
+   text-align: center;
+   box-shadow: 5px 5px 5px;
+ }
+.myPhotoSlides {display:none}
+.centre{text-align:center}
+img#BackgroundImage{
+  z-index:-1;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:100%;
+  height:100%;
+}
+a#arrow:hover{
+  color:grey;
+}
+.divshadow{
+  box-shadow:1px 1px;
+}
