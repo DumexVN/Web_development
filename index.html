@@ -11,17 +11,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
+<style>
+body {
+  background-image:url("Photos/background.jpg");
+  background-repeat: repeat-x;
+
+}
+</style>
 <body>
 
 
-<div style="width:100%">
+<div id="main" style="width:100%">
   <ul class="w3-navbar w3-lime w3-large w3-top w3-animate-opacity" style="width:100%, opacity:0.9">
-<a href="#"class=" tablink" onclick="openSection(event,'Home')"><i class="fa fa-home w3-margin-left w3-hide-small w3-margin-top w3-hover-khaki" style="font-size:40px"></i><i class="fa fa-home w3-hide-medium w3-hide-large w3-margin-left w3-margin-top w3-hover-khaki" style="font-size:20px"></i><span class="w3-Font_Gloria-Hallelujah w3-hide-small w3-hover-khaki" style="font-size:30px" >Home</span></a>
-<a href="#" class=" tablink" onclick="openSection(event,'Academic')"><i class="fa fa-graduation-cap w3-hide-small w3-margin-left w3-margin-top w3-hover-khaki" style="font-size:40px" ></i><i class="fa fa-graduation-cap w3-margin-left w3-hide-medium w3-hide-large w3-margin-top w3-hover-khaki" style="font-size:20px"></i><span class="w3-Font_Gloria-Hallelujah w3-hide-small w3-hover-khaki" style="font-size:30px">Academic</span></a>
-<a href="#" class="tablink" onclick="openSection(event,'ECAs')"><i class="fa fa-camera w3-margin-left w3-hide-small w3-margin-top w3-hover-khaki" style="font-size:40px"></i><i class="fa fa-camera w3-margin-left w3-hide-medium w3-hide-large w3-margin-top w3-hover-khaki" style="font-size:20px"></i><span class="w3-Font_Gloria-Hallelujah w3-hide-small w3-hover-khaki" style="font-size:30px">ECAs</span></a>
-<a href="#" class="tablink" onclick="openSection(event,'Code')"><i class="fa fa-terminal w3-margin-left w3-hide-small w3-margin-top w3-hover-khaki" style="font-size:40px"></i><i class="fa fa-terminal w3-margin-left w3-hide-medium w3-hide-large w3-margin-top w3-hover-khaki" style="font-size:20px"></i><span class="w3-Font_Gloria-Hallelujah w3-hide-small w3-hover-khaki" style="font-size:30px">Code</span></a>
-<a href="#" class="tablink" onclick="openSection(event,'Contact')"><i class="fa fa-envelope  w3-margin-left w3-hide-small w3-margin-top w3-hover-khaki" style="font-size:40px"></i><i class="fa fa-envelope w3-margin-left w3-hide-medium w3-hide-large w3-margin-top w3-hover-khaki" style="font-size:20px"></i><span class="w3-Font_Gloria-Hallelujah w3-hide-small w3-hover-khaki" style="font-size:30px">Contact</span></a>
-<a href="#" class="tablink" onclick="openSection(event,'Gallery')"><i class="fa fa-image w3-margin-left w3-hide-small w3-margin-top w3-hover-khaki" style="font-size:40px"></i><i class="fa fa-image w3-margin-left w3-hide-medium w3-hide-large w3-margin-top w3-hover-khaki" style="font-size:20px"></i><span class="w3-Font_Gloria-Hallelujah w3-hide-small w3-hover-khaki" style="font-size:30px">Gallery</span></a>
+<a href="#"class="tablink" onclick="openSection(event,'Home')"><i class="navPC fa fa-home w3-margin-left w3-hide-small " style="font-size:40px"></i><i class="fa fa-home w3-hide-medium w3-hide-large w3-margin-left w3-margin-top" style="font-size:20px"></i><span class="w3-Font_Gloria-Hallelujah w3-hide-small navPC" style="font-size:30px" >Home</span></a>
+<a href="#" class="tablink" onclick="openSection(event,'Academic')"><i class="navPC fa fa-graduation-cap w3-hide-small w3-margin-left w3-margin-top " style="font-size:40px" ></i><i class="fa fa-graduation-cap w3-margin-left w3-hide-medium w3-hide-large w3-margin-top" style="font-size:20px"></i><span class="w3-Font_Gloria-Hallelujah w3-hide-small navPC" style="font-size:30px">Academic</span></a>
+<a href="#" class="tablink" onclick="openSection(event,'ECAs')"><i class="navPC fa fa-camera w3-margin-left w3-hide-small " style="font-size:40px"></i><i class="fa fa-camera w3-margin-left w3-hide-medium w3-hide-large w3-margin-top" style="font-size:20px"></i><span class="w3-Font_Gloria-Hallelujah w3-hide-small navPC" style="font-size:30px">ECAs</span></a>
+<a href="#" class="tablink" onclick="openSection(event,'Code')"><i class="navPC fa fa-terminal w3-margin-left w3-hide-small " style="font-size:40px"></i><i class="fa fa-terminal w3-margin-left w3-hide-medium w3-hide-large w3-margin-top" style="font-size:20px"></i><span class="w3-Font_Gloria-Hallelujah w3-hide-small navPC" style="font-size:30px">Code</span></a>
+<a href="#" class="tablink" onclick="openSection(event,'Contact')"><i class="navPC fa fa-envelope  w3-margin-left w3-hide-small " style="font-size:40px"></i><i class="fa fa-envelope w3-margin-left w3-hide-medium w3-hide-large w3-margin-top" style="font-size:20px"></i><span class="w3-Font_Gloria-Hallelujah w3-hide-small navPC" style="font-size:30px">Contact</span></a>
+<a href="#" class="tablink" onclick="openSection(event,'Gallery')"><i class="navPC fa fa-image w3-margin-left w3-hide-small " style="font-size:40px"></i><i class="fa fa-image w3-margin-left w3-hide-medium w3-hide-large w3-margin-top" style="font-size:20px"></i><span class="w3-Font_Gloria-Hallelujah w3-hide-small navPC" style="font-size:30px">Gallery</span></a>
 </ul>
 
 <!-- Home Tab -->
@@ -36,10 +43,12 @@
 
 <!-- Academic Tab -->
 
-  <div id="Academic" class="w3-row w3-light-grey sectiona sections" style="margin-top:70px ;width:100% ;height:550px">
+  <div id="Academic" class="w3-container sections" style="margin-top:70px ;width:100%">
 <div class="w3-third w3-margin-top w3-rightbar w3-border-grey" style="margin-left:5%">
-<h1 class="w3-Font_Macondo-Swash-Caps w3-margin-left" style="font-size:40px">Academic Performance</h1>
-<p>aa</p>
+<h1 class="w3-Font_Macondo-Swash-Caps w3-margin-left" style="font-size:40px">Academic Performance</h1> <br>
+
+</div>
+<div class="w3-rest">
 </div>
 </div>
 
@@ -53,9 +62,10 @@
 
    <!-- Code Tab -->
 
-   <div id="Code" class="w3-row w3-light-grey sectiona sections" style="margin-top:70px ;width:100% ;height:550px">
+   <div id="Code" class="w3-container sections" style="margin-top:70px ;width:100%">
 <div class="w3-third w3-margin-top w3-rightbar w3-border-grey">
 <h1 class="w3-Font_Macondo-Swash-Caps w3-margin-left" style="font-size:40px">Computer Language</h1>
+<img src="Photos/20.jpg" style="width:100%">
 </div>
 </div>
 
@@ -94,7 +104,11 @@
   <!-- Gallery Tab -->
 
   <div id="Gallery" class="w3-container sections" style="margin-top:20% width:100%">
-    <div class="w3-container w3-third w3-hide-medium w3-hide-large" style="margin-top:200px">
+
+    <!-- Iphone display -->
+
+    <div class="w3-container w3-hide-medium w3-hide-large">
+    <div style="margin-top:100px">
     <div>   <img class="w3-animate-left w3-display-middle w3-hide-medium w3-hide-large w3-margin-top myPhotoSlidess phone" onclick="plussDivs(1)" src="Photos/1.jpg"></div>
     <div>   <img class="w3-animate-left w3-display-middle w3-hide-medium w3-hide-large w3-margin-top myPhotoSlidess phone" onclick="plussDivs(1)" src="Photos/2.JPG"></div>
     <div>   <img class="w3-animate-left w3-display-middle w3-hide-medium w3-hide-large w3-margin-top myPhotoSlidess phone" onclick="plussDivs(1)" src="Photos/3.JPG"></div>
@@ -114,13 +128,17 @@
     <div>   <img class="w3-animate-left w3-display-middle w3-hide-medium w3-hide-large w3-margin-top myPhotoSlidess phone" onclick="plussDivs(1)" src="Photos/17.JPG"></div>
     <div>   <img class="w3-animate-left w3-display-middle w3-hide-medium w3-hide-large w3-margin-top myPhotoSlidess phone" onclick="plussDivs(1)" src="Photos/18.JPG"></div>
     <div>   <img class="w3-animate-left w3-display-middle w3-hide-medium w3-hide-large w3-margin-top myPhotoSlidess phone" onclick="plussDivs(1)" src="Photos/19.JPG"></div>
-    </div>
-    <div class="w3-hide-small">
-    <div class="w3-display-middle" style="position:absolute; z-index:1000; width:100%">
-    <div class="w3-display-topleft" style="position:absolute z-index:1000"> <a id="arrow" class="fa fa-chevron-circle-left fa-4x" onclick="plusDivs(-1)"></a></div>
-    <div class="w3-display-topright" style="position:absolute z-index:1000"> <a id="arrow" class="fa fa-chevron-circle-right fa-4x" onclick="plusDivs(1)"></a> </div>
+  </div></div>
+
+    <!--PC display-->
+
+
+    <div id="PC" class="w3-hide-small">
+    <div class="w3-display-middle" style="width:100%">
+    <div class="w3-display-bottomleft"> <a id="arrow" class="fa fa-chevron-circle-left fa-4x" onclick="plusDivs(-1)"></a></div>
+    <div class="w3-display-bottomright"> <a id="arrow" class="fa fa-chevron-circle-right fa-4x" onclick="plusDivs(1)"></a> </div>
   </div>
-  <div> <img src="Photos/background.jpg" style="width:100%">
+  <div>
 <div class="myPhotoSlides w3-display-middle" style="margin-top:40px"><img class=" w3-animate-left" src="Photos/1.jpg" style="width:100%"><div class="w3-display-bottomleftw3-container w3-Font_Tangerine w3-xxlarge w3-light-grey">Operation Smile</div></div>
 <div class="myPhotoSlides w3-display-middle" style="margin-top:40px"><img class=" w3-animate-left" src="Photos/2.JPG" style="width:100%"><div class="w3-display-bottomleft w3-container w3-Font_Tangerine w3-xxlarge w3-light-grey">Dental Mission-Quang Ngai</div></div>
 <div class="myPhotoSlides w3-display-middle" style="margin-top:40px"><img class=" w3-animate-left" src="Photos/3.JPG" style="width:100%"><div class="w3-display-bottomleft w3-container w3-Font_Tangerine w3-xxlarge w3-light-grey">After a cleft palate operation...</div></div>
@@ -141,6 +159,8 @@
 <div class="myPhotoSlides w3-display-middle" style="margin-top:40px"><img class=" w3-animate-left" src="Photos/18.JPG" style="width:100%"><div class="w3-display-bottomleft w3-container w3-Font_Tangerine w3-xxlarge w3-light-grey">Translanguaging trophy</div></div>
 <div class="myPhotoSlides w3-display-middle" style="margin-top:40px"><img class=" w3-animate-left" src="Photos/19.JPG" style="width:100%"><div class="w3-display-bottomleft w3-container w3-Font_Tangerine w3-xxlarge w3-light-grey">Hanoi High School Maths Challenge 3rd Place</div></div>
 </div></div>
+
+
 </div>
 </div>
 <script>

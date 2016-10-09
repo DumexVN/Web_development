@@ -25,6 +25,11 @@ h1#MyName {
    box-shadow: 5px 5px 5px;
  }
 .myPhotoSlides {display:none}
+.myCertificates {
+  display:none;
+  margin-top:inherit;
+  margin-left:30%;
+}
 .centre{text-align:center}
 img#BackgroundImage{
   z-index:-1;
@@ -39,4 +44,10 @@ a#arrow:hover{
 }
 .divshadow{
   box-shadow:1px 1px;
+}
+
+.navPC:hover{
+  color:green;
+  margin-top:16px;
+  font-weight:bold;
 }

@@ -31,6 +31,8 @@ function w3_open() {
   evt.currentTarget.className += " w3-bottombar w3-border-teal";
  }
 
+  /*Photos PC*/
+
  var PhotoIndex = 1;
  showDivs(PhotoIndex);
 
@@ -49,7 +51,7 @@ function w3_open() {
     x[PhotoIndex-1].style.display = "block";
   }
 
-
+  /*Photos Phone*/
 
   var PhottoIndex = 1;
   showsDivs(PhottoIndex);
@@ -68,3 +70,24 @@ function w3_open() {
      }
      z[PhottoIndex-1].style.display = "block";
    }
+
+  /* Certificates PC*/
+
+
+   var CertiIndex = 1;
+   sshowDivs(CertiIndex);
+
+   function addDivs(m) {
+    sshowDivs(CertiIndex += m);
+    }
+
+    function sshowDivs(m) {
+      var t;
+      var r = document.getElementsByClassName("myCertificates");
+      if (m > r.length) {CertiIndex = 1}
+      if (m < 1) {CertiIndex = r.length}
+      for (t = 0; t < r.length; t++) {
+         r[t].style.display = "none";
+      }
+      r[CertiIndex-1].style.display = "block";
+    }
