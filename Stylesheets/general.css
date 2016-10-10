@@ -28,7 +28,11 @@ h1#MyName {
 .myCerti {
   display:none;
  margin-top:40px;
- margin-left:60px;
+ margin-left:40px;
+}
+.myCertis{
+  display:none;
+  margin-top:70px;
 }
 .centre{text-align:center}
 img#BackgroundImage{
@@ -48,6 +52,4 @@ a#arrow:hover{
 
 .navPC:hover{
   color:green;
-  margin-top:16px;
-  font-weight:bold;
 }

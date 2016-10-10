@@ -84,9 +84,29 @@ function w3_open() {
      var mnm;
      var qqq = document.getElementsByClassName("myCerti");
      if (p > qqq.length) {CertIndex = 1}
-     if (p < 1) {PhottoIndex = qqq.length}
+     if (p < 1) {CertIndex = qqq.length}
      for (mnm = 0; mnm < qqq.length; mnm++) {
         qqq[mnm].style.display = "none";
      }
      qqq[CertIndex-1].style.display = "block";
    }
+
+   /* Certificates iPhone*/
+
+   var CertificateIndex = 1;
+   showCertificate(CertificateIndex);
+
+   function AddsDivs(nom) {
+    showCertificate(CertificateIndex += nom);
+    }
+
+    function showCertificate(nom) {
+      var pom;
+      var lom = document.getElementsByClassName("myCertis");
+      if (nom > lom.length) {CertificateIndex = 1}
+      if (nom < 1) {CertificateIndex = lom.length}
+      for (pom = 0; pom < lom.length; pom++) {
+         lom[pom].style.display = "none";
+      }
+      lom[CertificateIndex-1].style.display = "block";
+    }
