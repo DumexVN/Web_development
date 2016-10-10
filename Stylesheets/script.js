@@ -73,21 +73,20 @@ function w3_open() {
 
   /* Certificates PC*/
 
+  var CertIndex = 1;
+  showCert(CertIndex);
 
-   var CertiIndex = 1;
-   sshowDivs(CertiIndex);
+  function addDivs(p) {
+   showCert(CertIndex += p);
+   }
 
-   function addDivs(m) {
-    sshowDivs(CertiIndex += m);
-    }
-
-    function sshowDivs(m) {
-      var t;
-      var r = document.getElementsByClassName("myCertificates");
-      if (m > r.length) {CertiIndex = 1}
-      if (m < 1) {CertiIndex = r.length}
-      for (t = 0; t < r.length; t++) {
-         r[t].style.display = "none";
-      }
-      r[CertiIndex-1].style.display = "block";
-    }
+   function showCert(p) {
+     var mnm;
+     var qqq = document.getElementsByClassName("myCerti");
+     if (p > qqq.length) {CertIndex = 1}
+     if (p < 1) {PhottoIndex = qqq.length}
+     for (mnm = 0; mnm < qqq.length; mnm++) {
+        qqq[mnm].style.display = "none";
+     }
+     qqq[CertIndex-1].style.display = "block";
+   }

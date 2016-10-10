@@ -25,10 +25,10 @@ h1#MyName {
    box-shadow: 5px 5px 5px;
  }
 .myPhotoSlides {display:none}
-.myCertificates {
+.myCerti {
   display:none;
-  margin-top:inherit;
-  margin-left:30%;
+ margin-top:40px;
+ margin-left:60px;
 }
 .centre{text-align:center}
 img#BackgroundImage{
