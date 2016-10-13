@@ -1,6 +1,24 @@
+@media screen and (max-width:800px){
+  span#Hide{
+    display:none;
+  }
+}
+h2#iGCSE:hover{
+  text-decoration: underline;
+}
+.SendMail:hover{
+  box-shadow: 3px 3px 3px;
+  font-weight: bold;
+}
+.Ani{
+  display:none;
+}
 .phone{
   height:auto;
   width:100%;
+}
+.ECA:hover{
+  font-weight:bold;
 }
 .phoneBackground{
   height:400px;

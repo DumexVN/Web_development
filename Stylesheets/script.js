@@ -31,6 +31,16 @@ function w3_open() {
   evt.currentTarget.className += " w3-bottombar w3-border-teal";
  }
 
+ function Tab(play) {
+    var uuuu;
+    var tyt = document.getElementsByClassName("Ani");
+    for (uuuu = 0; uuuu < tyt.length; uuuu++) {
+       tyt[uuuu].style.display = "none";
+    }
+    document.getElementById(play).style.display = "block";
+}
+
+
   /*Photos PC*/
 
  var PhotoIndex = 1;
@@ -91,6 +101,12 @@ function w3_open() {
      qqq[CertIndex-1].style.display = "block";
    }
 
+   function Igcse(){
+     if (document.getElementById("Grades").style.display=='none'){
+       document.getElementById("Grades").style.display='block'}
+       else {document.getElementById("Grades").style.display='none'}
+   }
+
    /* Certificates iPhone*/
 
    var CertificateIndex = 1;
@@ -110,3 +126,84 @@ function w3_open() {
       }
       lom[CertificateIndex-1].style.display = "block";
     }
+
+function EulerOn(){
+  if (document.getElementById("Euler").style.display=="block"){
+    document.getElementById("Euler").style.display="none";
+  }
+  else {document.getElementById("Euler").style.display="block";}
+}
+
+
+function WebsiteOn(){
+  if (document.getElementById("Website").style.display=="block"){
+    document.getElementById("Website").style.display="none";
+  }
+  else {document.getElementById("Website").style.display="block";}
+}
+
+function GitOn(){
+  if (document.getElementById("Github").style.display=="block"){
+    document.getElementById("Github").style.display="none";
+  }
+  else {document.getElementById("Github").style.display="block";}
+}
+
+function PianoOn(){
+  if (document.getElementById("Piano").style.display=="block"){
+    document.getElementById("Piano").style.display="none";
+  }
+  else {document.getElementById("Piano").style.display="block";}
+}
+
+function DukeOn(){
+  if (document.getElementById("Duke").style.display=="block"){
+    document.getElementById("Duke").style.display="none";
+  }
+  else {document.getElementById("Duke").style.display="block";}
+}
+
+function OSOn(){
+  if (document.getElementById("OS").style.display=="block"){
+    document.getElementById("OS").style.display="none";
+  }
+  else {document.getElementById("OS").style.display="block";}
+}
+
+function SportsOn(){
+  if (document.getElementById("Sports").style.display=="block"){
+    document.getElementById("Sports").style.display="none";
+  }
+  else {document.getElementById("Sports").style.display="block";}
+}
+
+function Default(){
+  document.getElementById('Home').style.display='block';
+}
+
+
+     /*Academic*/
+
+ function TransOn(){
+   if (document.getElementById("Trans").style.display=="block"){
+     document.getElementById("Trans").style.display="none";
+   }
+   else {document.getElementById("Trans").style.display="block";}
+
+ }
+
+ function MathsOn(){
+   if (document.getElementById("Maths").style.display=="block"){
+     document.getElementById("Maths").style.display="none";
+   }
+   else {document.getElementById("Maths").style.display="block";}
+
+ }
+
+ function DebateOn(){
+   if (document.getElementById("Debate").style.display=="block"){
+     document.getElementById("Debate").style.display="none";
+   }
+   else {document.getElementById("Debate").style.display="block";}
+
+ }
