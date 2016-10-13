@@ -30,10 +30,6 @@ body {
 <a href="#" class="tablink" onclick="openSection(event,'Gallery')"><i class="navPC fa fa-image w3-margin-left w3-hide-small " style="font-size:40px"></i><i class="fa fa-image w3-hide-medium w3-hide-large w3-margin-top" style="font-size:20px"></i><span id="Hide" class="  w3-Font_Gloria-Hallelujah w3-hide-small w3-hide-medium navPC" style="font-size:20px">Gallery</span></a>
 <a href="#" class="tablink" onclick="openSection(event,'Certi')"><i class="navPC fa fa-university w3-margin-left w3-hide-small " style="font-size:40px"></i><i class="fa fa-university w3-hide-medium w3-hide-large w3-margin-top" style="font-size:20px"></i><span id="Hide" class="  w3-Font_Gloria-Hallelujah w3-hide-small w3-hide-medium navPC" style="font-size:20px">Certificates</span></a>
 </ul>
-<script>
-openSection(event, 'Home')
-</script>
-
 <!-- Home Tab -->
 
     <div id="Home" class="Home w3-container w3-display-top sections" style="text-align:left width:100%">
@@ -43,6 +39,10 @@ openSection(event, 'Home')
      <h1 class="w3-medium w3-hide-medium w3-hide-large w3-display-middle w3-Font_Macondo-Swash-Caps w3-light-grey w3-opacity w3-animate-opacity"> Vu Cong Hoang </h1>
    </br>
   </div>
+<script>
+  // TRIGGER MANUALLY
+document.getElementById('Home').style.display = "block"
+</script>
 
 <!-- Academic Tab -->
 
